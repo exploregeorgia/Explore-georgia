@@ -1,55 +1,60 @@
+
 <!DOCTYPE html>
-<html lang="ka">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Explore Georgia</title>
   <link rel="stylesheet" href="style.css" />
-  <script src="script.js" defer></script>
 </head>
 <body>
-  <header class="hero">
-    <div class="overlay">
-      <h1 class="lang ka">გაეცანი საქართველოს</h1>
-      <h1 class="lang en" style="display:none;">Explore Georgia</h1>
-      <h1 class="lang ru" style="display:none;">Открой Грузию</h1>
-      <p class="lang ka">დაჯავშნე ტური, იპოვე სასტუმროები და ტრანსპორტი</p>
-      <p class="lang en" style="display:none;">Book a tour, find hotels and transport</p>
-      <p class="lang ru" style="display:none;">Забронируйте тур, найдите отели и транспорт</p>
-      <div class="buttons">
-        <a href="#tours" class="btn">ტურები</a>
-        <a href="hotels.html" class="btn secondary">სასტუმროები</a>
-      </div>
-      <div class="lang-switch">
-        <button onclick="setLanguage('ka')">ქარ</button>
-        <button onclick="setLanguage('en')">EN</button>
-        <button onclick="setLanguage('ru')">РУС</button>
-      </div>
-    </div>
+  <header>
+    <h1>Explore Georgia</h1>
+    <nav>
+      <a href="#">Tours</a>
+      <a href="#">Hotels</a>
+      <a href="#">Transport</a>
+      <a href="#">Contact</a>
+    </nav>
   </header>
 
-  <main>
-    <section id="tours">
-      <h2>ტურები</h2>
-      <div class="card-grid">
-        <div class="card">
-          <h3>თბილისის ტური</h3>
-          <p>აღმოაჩინე ძველი თბილისი და ისტორიული ადგილები</p>
-        </div>
-        <div class="card">
-          <h3>კახეთის ღვინის ტური</h3>
-          <p>დაგემოვნე საუკეთესო ღვინოები და ეწვიე მარნებს</p>
-        </div>
-        <div class="card">
-          <h3>ზღვისპირა ტური</h3>
-          <p>დასვენება ბათუმის სანაპიროზე და აჭარის ლამაზ ბუნებაში</p>
-        </div>
-      </div>
-    </section>
-  </main>
+  <section class="hero" style="background-image: url('images/hero.jpg')">
+    <div class="overlay">
+      <h2>Tourism website for visitors to Georgia</h2>
+      <p>Book tours, find hotel and transport information</p>
+    </div>
+  </section>
 
-  <footer>
-    <p>საკონტაქტო: explore.georgia.info@gmail.com | +995 599 123 456</p>
-  </footer>
+  <section class="tours">
+    <h2>Tours</h2>
+    <div class="tour-cards">
+      <div class="tour-card">
+        <img src="images/tbilisi.jpg" alt="Tbilisi Tour" />
+        <h3>Tbilisi Tour</h3>
+        <button>Book Tour</button>
+      </div>
+      <div class="tour-card">
+        <img src="images/kakheti.jpg" alt="Kakheti Wine Tour" />
+        <h3>Kakheti Wine Tour</h3>
+        <button>Book Tour</button>
+      </div>
+      <div class="tour-card">
+        <img src="images/vardzia.jpg" alt="Vardzia and Borjomi Tour" />
+        <h3>Vardzia and Borjomi Tour</h3>
+        <button>Book Tour</button>
+      </div>
+      <div class="tour-card">
+        <img src="images/seaside.jpg" alt="Seaside Tour" />
+        <h3>Seaside Tour</h3>
+        <button>Book Tour</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="hotels">
+    <h2>Hotels</h2>
+    <p>Find accommodations in Georgia</p>
+    <img src="images/hotel.jpg" alt="Hotel View" />
+  </section>
 </body>
 </html>
