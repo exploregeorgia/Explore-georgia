@@ -1,43 +1,78 @@
 body {
-  font-family: sans-serif;
   margin: 0;
-  padding: 0;
-  background: #f9f9f9;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
 }
-header {
-  background: #2c3e50;
+.hero {
+  position: relative;
+  background-image: url('https://images.unsplash.com/photo-1549893074-37e5e47dd4bf?auto=format&fit=crop&w=1920&q=80');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.overlay {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 40px;
   color: white;
-  padding: 1rem;
   text-align: center;
+  width: 100%;
 }
-nav {
-  margin-top: 1rem;
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
 }
-nav a {
+.hero p {
+  font-size: 1.2rem;
+}
+.buttons {
+  margin: 20px 0;
+}
+.btn {
+  padding: 10px 20px;
+  margin: 5px;
+  background: #f39c12;
   color: white;
-  margin: 0 10px;
+  border: none;
   text-decoration: none;
   font-weight: bold;
+  border-radius: 6px;
 }
-main {
-  padding: 2rem;
-  text-align: center;
-}
-.tour {
-  background: white;
-  margin: 2rem auto;
-  max-width: 500px;
-  padding: 1rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-form input, form button {
-  margin: 0.5rem 0;
-  padding: 0.5rem;
-  width: 90%;
+.btn.secondary {
+  background: #3498db;
 }
 .lang-switch button {
-  margin: 0 4px;
-  padding: 4px 8px;
+  margin: 5px;
+  background: transparent;
+  border: 1px solid #fff;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
   cursor: pointer;
+}
+main {
+  padding: 40px 20px;
+}
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #222;
+  color: white;
 }
