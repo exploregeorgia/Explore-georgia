@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore Georgia</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1 class="lang ka">გაეცანი საქართველოს</h1>
+    <h1 class="lang en" style="display:none;">Explore Georgia</h1>
+    <h1 class="lang ru" style="display:none;">Открой Грузию</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="hotels.html">Hotels</a>
+      <a href="transport.html">Transport</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="lang-switch">
+      <button onclick="setLanguage('ka')">ქართული</button>
+      <button onclick="setLanguage('en')">English</button>
+      <button onclick="setLanguage('ru')">Русский</button>
+    </div>
+  </header>
+  <main>
+    <section class="tour">
+      <h2 class="lang ka">თბილისის ტური</h2>
+      <h2 class="lang en" style="display:none;">Tbilisi Tour</h2>
+      <h2 class="lang ru" style="display:none;">Тур по Тбилиси</h2>
+      <p class="lang ka">აღმოაჩინე ძველი თბილისი და მისი ისტორიული ადგილები.</p>
+      <p class="lang en" style="display:none;">Discover the historic old town of Tbilisi.</p>
+      <p class="lang ru" style="display:none;">Исследуйте исторический старый город Тбилиси.</p>
+    </section>
+
+    <section class="tour">
+      <h2 class="lang ka">დაჯავშნის ფორმა</h2>
+      <h2 class="lang en" style="display:none;">Booking Form</h2>
+      <h2 class="lang ru" style="display:none;">Форма бронирования</h2>
+      <form>
+        <input type="text" placeholder="Name / სახელი" required><br>
+        <input type="email" placeholder="Email" required><br>
+        <input type="date" required><br>
+        <button type="submit">Book Tour</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
